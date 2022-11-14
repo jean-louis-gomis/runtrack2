@@ -30,8 +30,8 @@ print gettype ($caracteres);
 <html lang="fr">
 <body>
 <style type="text/css">
-.tftable {font-size:12px;color:#333333;width:50%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
-.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+.tftable {font-size:12px;color:#333333;width:30%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+.tftable th {font-size:12px;background-color:#acc8cc;text-align : center; border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
 .tftable tr {background-color:#ffffff;}
 .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
 .tftable tr:hover {background-color:#ffff99;}
