@@ -5,7 +5,7 @@ $bold = 42;
 
 while ($dep < $fin) {
     if ($dep === 42) {
-        echo "<b>$bold</b>";
+        echo "<b><b/>"."<u></u>";
     }
     echo $dep. '<br>';
     $dep = $dep + 1;
