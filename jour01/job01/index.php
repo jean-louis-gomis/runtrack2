@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+<?php echo "“LaPlateforme”" ?>
+=======
 <?php 
 $str = "LaPlateforme" ;
 $str2 = "Vive " ;
@@ -34,3 +37,4 @@ $myBool = false ;
     echo $myBool;
 
 ?>
+>>>>>>> 845fdd9d1ca9ceb7f18234136f1329fae0bde604
