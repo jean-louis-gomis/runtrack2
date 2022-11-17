@@ -3,14 +3,19 @@ $dep = 0;
 $fin = 1337;
 $bold = 42;
 
-while ($dep < $fin) {
-    if ($dep === 42) {
-        echo "<b><b/>"."<u></u>";
+for ($dep=0; $dep<1337; $dep++) {
+    if ($dep === $bold) {
+        echo " <b>" $bold,"<b/>""<br/> ";
     }
-    echo $dep. '<br>';
-    $dep = $dep + 1;
+
+    else {
+        echo $dep. '<br/>';
+    }
 }
 
 
-
 ?>
+
+
+
+
