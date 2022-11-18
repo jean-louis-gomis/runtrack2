@@ -1,17 +1,13 @@
 <?php
-$str = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie."
-$compt = 
-    for ($i=0;  < $i++) 
-        # code...
-    }
-    for ($i=0; $i <= 78; $i++) {
-        echo $str[$i];
-
-        
-    }
-
-
-
-
-
-?>
+    $chaine = array("Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.");
+    // var_dump($chaine)
+    while ($chaine <78) { 
+        if ($chaine %2 == 0) {
+            $chaine++;
+            continue; 
+    } 
+        else {
+            echo $chaine;
+        }
+}
+    ?>
