@@ -6,7 +6,7 @@
             echo $chaine[$i];       
 
         }
-}
+} 
 
 
 ?>
