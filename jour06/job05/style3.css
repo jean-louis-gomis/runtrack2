@@ -1,0 +1,29 @@
+body {
+    background: url(quatar.webp)no-repeat center fixed;
+    margin: 1%;
+    padding: 1%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 640px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rokkitt', serif;
+}
+
+label {
+    font-family: 'Rokkitt', serif;
+    font-size: 1rem;
+    color: white;
+    padding-right: 10px;
+    
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+    font-family: 'Oswald', sans-serif;
+
+}
