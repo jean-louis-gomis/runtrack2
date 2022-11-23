@@ -12,15 +12,3 @@
     echo $sommes;
 
 ?>
-
-
-
-<?php
-    function calcule ($a,$operation,$b) {
-        if (condition) {
-
-        }
-
-    }
-
-?>
