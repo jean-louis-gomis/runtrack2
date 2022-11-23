@@ -1,23 +1,23 @@
 body {
-    background: url(style2.jpg)no-repeat center fixed;
+    background: url(quatar.png)no-repeat center fixed;
     margin: 1%;
     padding: 1%;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 640px;
+    height: auto;
     justify-content: center;
     /* font-family: 'Montserrat', sans-serif;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif; */
+    /* font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Rokkitt', serif; */
 }
 
 form {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ddcc2e;
+    color: white;
     padding-right: 10px;
     line-height: 4em;
     text-shadow: 0.1em 0.1em 0.2em black;
@@ -27,13 +27,14 @@ form {
 select {
     font-size: .9rem;
     padding: 2px 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 1%;
 }
+
 input {
     font-size: .9rem;
     padding: 2px 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 4em;
 
 }
