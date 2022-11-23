@@ -12,28 +12,28 @@ function leetSpeak($str)
 
 $result = "";
 
-for($index=0 ; isset($str[$index]) ; $index++ )
+for ($index=0 ; isset($str[$index]) ; $index++ )
 {
 
-    if ($str[$index] == 'a' OR $str[$index] == 'A'){
+    if ($str[$index] == 'a' || $str[$index] == 'A'){
         $result[$index] = '4';
     }
-    elseif ($str[$index] == 'b' OR $str[$index] == 'B'){
+    elseif ($str[$index] == 'b' || $str[$index] == 'B'){
         $result[$index] = '8';
     }
-    elseif ($str[$index] == 'e' OR $str[$index] == 'E'){
+    elseif ($str[$index] == 'e' || $str[$index] == 'E'){
         $result[$index] = '3';
     }
-    elseif ($str[$index] == 'g' OR $str[$index] == 'G'){
+    elseif ($str[$index] == 'g' || $str[$index] == 'G'){
         $result[$index] = '6';
     }
-    elseif ($str[$index] == 'l'  OR $str[$index] == 'L'){
+    elseif ($str[$index] == 'l'  || $str[$index] == 'L'){
         $result[$index] = '1';
     }
-    elseif ($str[$index] == 's' OR $str[$index] == 'S'){
+    elseif ($str[$index] == 's' || $str[$index] == 'S'){
         $result[$index] = '5';
     }
-    elseif ($str[$index] == 't' OR $str[$index] == 'T'){
+    elseif ($str[$index] == 't' || $str[$index] == 'T'){
         $result[$index] = '7';
     }
     else{
