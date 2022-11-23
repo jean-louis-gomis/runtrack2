@@ -17,11 +17,9 @@
 
 <select name="qui" id="qui-select">
     <option value="">--Choisissez votre favoris--</option>
-    <option value="germany">Allemagne</option>
-    <option value="brasil">Brésil</option>
-    <option value="france">France</option>
-    <option value="nederland">Pays-Bas</option>
-    <option value="senegal">Sénégal</option>
+    <option value="style1">Allemagne</option>
+    <option value="style2">Brésil</option>
+    <option value="style3">France</option>
 </select>
 <?php
 

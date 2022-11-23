@@ -4,7 +4,7 @@ body {
     padding: 1%;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 640px;
+    height: auto;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat Alternates', sans-serif;
