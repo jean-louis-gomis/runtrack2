@@ -1,19 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>salut</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form action="" method="get">
+        <label for="name">Nom: </label> 
+        <input type="text" id="name" style="margin-bottom: 1%;" name="user_name" required><br>
+        <label for="name">Prénom: </label> 
+        <input type="text" id="name" style="margin-bottom: 1%;" name="user_name" required><br>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
+
 <?php
-    foreach($_GET as $key => $value) {
-        echo $key." => ".$value.'<br/>';
+
+$i= 0;
+
+    foreach($_GET as $key){
+    $i++;
     }
-
-    print_r($_GET);
-
-
-
-    ?>
-
-<form action="./index.php" method="get">
-    <label for="fname"> Nom:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname"> Prénom:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <input type="submit" value="Envoyer">
-</form>
-
+    echo $i;
+    var_dump ($_GET);
+?>

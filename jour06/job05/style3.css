@@ -1,0 +1,39 @@
+body {
+    background: url(style3.jpg)no-repeat center fixed;
+    margin: 1%;
+    padding: 1%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 640px;
+    justify-content: center;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rokkitt', serif; */
+}
+
+form {
+    font-family: 'Rokkitt', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3936b0;
+    padding-right: 10px;
+    line-height: 4em;
+    text-shadow: 0.1em 0.1em 0.2em black;    
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 1%;
+}
+
+input {
+    font-size: .9rem;
+    padding: 2px 5px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 4em;
+
+}
