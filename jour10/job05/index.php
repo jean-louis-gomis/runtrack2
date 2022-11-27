@@ -24,15 +24,15 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT `prenom`, `nom`, `naissance` FROM `etudiants` WHERE sexe='Femme'";
+$sql = "SELECT `id`, `prenom`, `nom`, `naissance`, `sexe`, `email` FROM `etudiants` WHERE naissance < '2003/12/31'";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
 /*Affichage des données résultats de chaque ligne dans une table html*/
-	echo "<table class='tftable'> <tr><th>Prénom</th><th> Nom</th><th> Naissance</th></tr>";
+	echo "<table class='tftable'> <tr><th>Prénom</th><th> Nom</th><th> Naissance</th><th> Sexe</th><th> Email</th></tr>";
   
   while($row = mysqli_fetch_assoc($result)) {
-    echo "<tr><td>" . $row["prenom"]. "</td><td>" . $row["nom"]. "</td><td>" . $row["naissance"]. "</td></tr>";
+    echo "<tr><td>" . $row["prenom"]. "</td><td>" . $row["nom"]. "</td><td>" . $row["naissance"]. "</td><td>" . $row["sexe"]. "</td><td>" . $row["email"]. "</td></tr>";
   }
 echo "</table>";
 } else {
