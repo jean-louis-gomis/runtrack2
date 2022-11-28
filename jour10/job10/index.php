@@ -24,15 +24,15 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT SUM(capacite) FROM `salles`";
+$sql = "SELECT * FROM `salles` ORDER BY capacite DESC;";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
 /*Affichage des données résultats de chaque ligne dans une table html*/
-	echo "<table class='tftable'> <tr><th> capacite_totale</th></tr>";
+	echo "<table class='tftable'> <tr><th>Nom</th><th>Capacité</th></tr>";
   
   while($row = mysqli_fetch_assoc($result)) {
-    echo "<tr><td>". $row["SUM(capacite)"]. "</td></tr>";
+    echo "<tr><td>". $row["nom" ]."</td><td>". $row["capacite"] . "</td></tr>";
   }
 echo "</table>";
 } else {

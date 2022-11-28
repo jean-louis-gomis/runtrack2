@@ -16,6 +16,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "jour09";
+$moyenne = "SELECT AVG(capacite) FROM `salles`";
 
 // Créer une connexion
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -24,15 +25,15 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT SUM(capacite) FROM `salles`";
+$sql = "SELECT `nom`, `id_etage` FROM `salles` INNER JOIN etage ON id_etage=etage.id;";
 $result = $conn->query($sql);
 
 if (mysqli_num_rows($result) > 0) {
 /*Affichage des données résultats de chaque ligne dans une table html*/
-	echo "<table class='tftable'> <tr><th> capacite_totale</th></tr>";
+	echo "<table class='tftable'> <tr><th>Nom</th><th>Étage</th></tr>";
   
   while($row = mysqli_fetch_assoc($result)) {
-    echo "<tr><td>". $row["SUM(capacite)"]. "</td></tr>";
+    echo "<tr><td>". $row["nom" ]."</td><td>". $row["id_etage"] . "</td></tr>";
   }
 echo "</table>";
 } else {
